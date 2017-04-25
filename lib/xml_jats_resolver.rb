@@ -40,10 +40,10 @@ module XmlJats
       if identifier.nil?
         xml = Nokogiri::XML.parse(@filestream)
         unless xml.internal_subset
-          raise XmlJats::DoctypeError, 'No doctype declared'
+          raise XmlJats::DoctypeError
         end
         unless xml.internal_subset.external_id
-          raise XmlJats::PublicIdentifierNotDeclared, 'Public identifier not declared'
+          raise XmlJats::PublicIdentifierNotDeclared
         end
         identifier ||= xml.internal_subset.external_id.to_sym
       end
