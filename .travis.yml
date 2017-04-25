@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+  2.2
+sudo: false
+notifications:
+  email: false
