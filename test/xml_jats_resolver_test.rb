@@ -52,7 +52,10 @@ dtds = {
   # Atypon
   '-//Atypon//DTD Atypon Systems Archival NLM DTD Suite v2.2.0 20090301//EN': 'atypon/2.2/dtd/',
   '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.0 20090430//EN': 'atypon/3.0.0/dtd/',
+  '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.1 20100714//EN': 'atypon/3.0.1/dtd/',
   '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.2 20101108//EN': 'atypon/3.0.3/dtd/',
+  '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.4 20110308//EN': 'atypon/3.0.4/dtd/',
+  '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.5 20110520//EN': 'atypon/3.0.5/dtd/',
   '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.6 20130326//EN': 'atypon/3.0.6/dtd/'
 }
 
