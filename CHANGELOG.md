@@ -1,3 +1,7 @@
+## 0.3.1
+
+* Be less restrictive on Nokogiri version
+
 ## 0.3.0
 
 * Add Atypon DTDs: v1.1.1
