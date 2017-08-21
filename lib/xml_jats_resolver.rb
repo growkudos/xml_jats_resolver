@@ -63,7 +63,8 @@ module XmlJats
         '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.2 20101108//EN': 'atypon/3.0.3/dtd/',
         '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.4 20110308//EN': 'atypon/3.0.4/dtd/',
         '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.5 20110520//EN': 'atypon/3.0.5/dtd/',
-        '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.6 20130326//EN': 'atypon/3.0.6/dtd/'
+        '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.6 20130326//EN': 'atypon/3.0.6/dtd/',
+        '-//Atypon//DTD Atypon JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.1.1 20160223//EN': 'atypon/v1.1.1/dtd/Atypon-archive-oasis-article1-mathml3.dtd'
       }
     end
 

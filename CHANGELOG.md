@@ -1,3 +1,7 @@
+## 0.3.0
+
+* Add Atypon DTDs: v1.1.1
+
 ## 0.2.0
 
 * Add Atypon DTDs: 3.0.1, 3.0.4 and 3.0.5

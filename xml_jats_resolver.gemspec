@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'xml_jats_resolver'
-  spec.version       = '0.2.0'
+  spec.version       = '0.3.0'
   spec.authors       = ['Kudos']
   spec.email         = ['engineering@growkudos.com']
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'nokogiri', '~> 1.7.0.1'
+  spec.add_dependency 'nokogiri', '~> 1.7.0.1'
   spec.add_development_dependency 'rake', '~> 12.0.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
 end

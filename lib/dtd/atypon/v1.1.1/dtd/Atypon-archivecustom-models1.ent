@@ -1,0 +1,168 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Journal Archiving DTD Customize Content and       -->
+<!--             Attributes Module                                 -->
+<!--  VERSION:   ANSI/NISO JATS Version 1.1 (Z39.96-2015)          -->
+<!--		 Atypon Customization				   -->
+<!--  DATE:      February 2016                                     -->
+<!--                                                               -->
+<!--    Created from, and fully compatible with, the ANSI/NISO     -->
+<!--    Z39.96 Journal Article Tag Suite (JATS).                   -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//Atypon//DTD Atypon (Z39.96) Journal Archiving DTD Customize Content and Attributes Module v1.1 20160223//EN"
+Delivered as file "Atypon-archivecustom-models1.ent"               -->
+
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Journal Archiving and Interchange DTD of the      --> 
+<!--             JATS DTD Suite                                    -->         
+<!--                                                               -->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   -->
+<!--             over-ride the content models, parts of content    -->
+<!--             models, or attribute lists of the JATS DTD Suite  -->
+<!--                                                               -->
+<!--             Or-groups within models should use mixes or       -->
+<!--             classes rather than name elements directly.       -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             content modules that declare elements.            -->
+<!--                                                               -->
+<!-- TAG SET SPONSOR                                               -->
+<!--             National Center for Biotechnology                 -->
+<!--                Information (NCBI)                             -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             This DTD was created from the JATS DTD Suite.     -->
+<!--             Digital archives and publishers may use the       -->
+<!--             DTD as is for markup of journal literature or     -->
+<!--             related material for archiving and transferring   -->
+<!--             such material between archives or create a        -->
+<!--             custom XML DTD from the Suite for                 -->
+<!--             these purposes.                                   -->
+<!--                                                               -->
+<!--             This DTD is in the public domain. An organization -->
+<!--             that wishes to create its own DTD from the suite  -->
+<!--             may do so without permission from NLM.            -->
+<!--                                                               -->
+<!--             The suite has been set up to be extended using a  -->
+<!--             new DTD file and a new DTD-specific customization -->
+<!--             module to redefine the many Parameter Entities.   -->
+<!--             Do not modify the suite directly or redistribute  -->
+<!--             modified versions of the suite.                   -->
+<!--                                                               -->
+<!--             In the interest of maintaining consistency and    -->
+<!--             clarity for potential users, NLM requests:        -->
+<!--                                                               -->
+<!--             1. If you create a DTD from the JATS DTD Suite    -->
+<!--                and intend to stay compatible with the suite,  -->
+<!--                then please include the following statement    -->
+<!--                as a comment in all of your DTD modules:       -->
+<!--                   "Created from, and fully compatible with,   -->
+<!--                    the ANSI/NISO Z39.96 Journal Article Tag   -->
+<!--                    Suite (JATS)."                             -->
+<!--                                                               -->
+<!--             2. If you alter one or more modules of the suite, -->
+<!--                then please rename your version and all its    -->
+<!--                modules to avoid any confusion with the        -->
+<!--                original suite. Also, please include the       -->
+<!--                following statement as a comment in all your   -->
+<!--                DTD modules:                                   -->
+<!--                   "Based in part on, but not fully compatible -->
+<!--                    with, the ANSI/NISO Z39.96 Journal Article -->
+<!--                    Tag Suite (JATS)."                         -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             August 2004                                       -->
+<!--                                                               -->
+<!-- CREATED BY: Mulberry Technologies, Inc. for the NISO Z39.96   -->
+<!--             Working Group. Mulberry Technologies was          -->
+<!--             supported by National Center for Biotechnology    -->
+<!--             Information (NCBI), a center of the US National   -->
+<!--             Library of Medicine (NLM).                        -->
+<!--                                                               -->
+<!--             The Journal Archiving and Interchange DTD is      -->
+<!--             built from the JATS DTD Suite.                    -->
+<!--                                                               -->
+<!--             This DTD and the Suite are a continuation of      -->
+<!--             the work done by NCBI, Mulberry Technologies,     -->
+<!--             and Inera Inc. on the NLM Journal Archiving       -->
+<!--             and Interchange DTD Suite, which was originally   -->
+<!--             released in December, 2002.                       -->
+<!--                                                               -->
+<!--             NLM thanks the Harvard University Libraries, both -->
+<!--             for proposing that a draft archiving NLM DTD for  -->
+<!--             life sciences journals be extended to accommodate -->
+<!--             journals in all disciplines and for sponsoring    -->
+<!--             Inera Inc.'s collaboration with other DTD         -->
+<!--             authors in completing NLM Version 1.0. The        -->
+<!--             Andrew W. Mellon Foundation provided support for  -->
+<!--             these important contributions.                    -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 jats@ncbi.nlm.nih.gov                         -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+    =============================================================
+    Atypon JATS Version 1.1.1        (Atypon) v1.1.1 (2016-02-23)
+
+    1. ACCREDITATION - Added optional <accreditation> element
+    inside <article-meta> to record accreditation metadata
+    for CME content.
+    2.DATE - Added date and string-date elements to
+    <open-access> through date.class.                              -->
+
+<!-- ============================================================= -->
+<!--                    OVER-RIDES OF CONTENT MODELS (FULL MODELS) -->
+<!-- ============================================================= -->
+
+
+<!--                    ARTICLE METADATA MODEL                     -->
+<!--                    Content model for the metadata that is
+                        specific to the article.                   -->
+
+<!ENTITY % article-meta-model
+                "(article-id*, article-categories?,
+                         title-group?,
+                         (%contrib-group.class; |
+                          %aff-alternatives.class; | %x.class;)*,
+                         author-notes?, pub-date*,
+                         volume?, volume-id*, volume-series?,
+                         issue*, issue-id*, issue-title*,
+                         issue-sponsor*, issue-part?, 
+			 volume-issue-group*, isbn*,
+                         supplement?,
+                         ( ( (fpage, lpage?)?, page-range?) |
+                           elocation-id )?,
+                         (%address-link.class; | product |
+                          supplementary-material)*,
+                         history?, permissions?, self-uri*,
+                         (%related-article.class;)*,
+                         (%abstract.class;)*, trans-abstract*,
+                         (%kwd-group.class;)*, accreditation*, funding-group*,
+                         conference*, counts?, custom-meta-group?)"  >
+
+<!--                    OPEN ACCESS MODEL                          -->
+<!--                    Model for the <open-access> element        -->
+<!ENTITY % open-access-model
+                "((%date.class;), (%just-para.class;)+)"     >
+
+
+<!-- ================== End Archiving Content/ATT Over-rides ===== -->
