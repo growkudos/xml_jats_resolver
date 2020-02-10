@@ -35,6 +35,7 @@ module XmlJats
         '-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.1 20151215//EN': 'jats/archiving/1.1/mathml3_dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables v1.1 20151215//EN': 'jats/archiving/1.1/oasis_mathml2_dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.1 20151215//EN': 'jats/archiving/1.1/oasis_mathml3_dtd/',
+        '-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.2d1 20170631//EN': 'jats/archiving/1.2d1/oasis_mathml3_dtd/'
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v0.4 20110131//EN': 'jats/publishing/0.4/dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD (OASIS Tables) v0.4 20110131//EN': 'jats/publishing/0.4/dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN': 'jats/publishing/1.0/dtd/',
@@ -55,7 +56,6 @@ module XmlJats
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD with MathML3 v1.1d3 20150301//EN': 'jats/publishing/1.1d3/dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables v1.1d3 20150301//EN': 'jats/publishing/1.1d3/dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables with MathML3 v1.1d3 20150301//EN': 'jats/publishing/1.1d3/dtd/',
-        '-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.2d1 20170631//EN': 'jats/publishing/1.2d1/dtd/'
 
         # Atypon
         '-//Atypon//DTD Atypon Systems Archival NLM DTD Suite v2.2.0 20090301//EN': 'atypon/2.2/dtd/',
