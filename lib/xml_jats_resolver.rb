@@ -57,6 +57,9 @@ module XmlJats
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables v1.1d3 20150301//EN': 'jats/publishing/1.1d3/dtd/',
         '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables with MathML3 v1.1d3 20150301//EN': 'jats/publishing/1.1d3/dtd/',
 
+        # BITS
+        '-//NLM//DTD BITS Book Interchange DTD with OASIS and XHTML Tables v2.0 20151225//EN': 'jats/archiving/2.0/bits_oasis_xhtml_tables_dtd',
+
         # Atypon
         '-//Atypon//DTD Atypon Systems Archival NLM DTD Suite v2.2.0 20090301//EN': 'atypon/2.2/dtd/',
         '-//Atypon//DTD Atypon Systems Journal Archiving and Interchange NLM DTD v3.0.0 20090430//EN': 'atypon/3.0.0/dtd/',
