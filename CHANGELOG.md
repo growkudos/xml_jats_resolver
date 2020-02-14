@@ -1,3 +1,7 @@
+## 0.3.2
+
+* Add DTDs for BITS and JATS v1.2d
+
 ## 0.3.1
 
 * Be less restrictive on Nokogiri version
